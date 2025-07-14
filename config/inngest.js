@@ -75,12 +75,12 @@ export const createUserOrder = inngest.createFunction(
         amount: event.data.amount,
         address: event.data.address,
         date: event.data.date
-      };
-    });
+      }
+    })
 
     await connectDB();
-    await Order.insertMany(orders);
+    await Order.insertMany(orders)
 
     return { success: true, processed: orders.length };
   }
-)
+) 
