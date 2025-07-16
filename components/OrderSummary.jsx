@@ -11,7 +11,6 @@ const OrderSummary = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const [userAddresses, setUserAddresses] = useState([]);
-
   const fetchUserAddresses = async () => {
     try {
 
@@ -42,19 +41,19 @@ const OrderSummary = () => {
         return toast.error("Please select an address")
       }
 
-      let cartItemsArray = Object.keys(cartItems).map((key) => ({ product: key, quantity: cartItems[key] }));
+      let cartItemsArray = Object.keys(cartItems).map((key) => ({ product: key, quantity: cartItems[key] }))
       cartItemsArray = cartItemsArray.filter(item => item.quantity > 0)
 
       if (cartItemsArray.length === 0) {
-        return toast.error("Your cart is empty");
+        return toast.error("Cart is empty")
       }
 
       const token = await getToken()
 
-      const { data } = await axios.post('/api/order/create-order', {
+      const { data } = await axios.post('/api/order/create', {
         address: selectedAddress._id,
         items: cartItemsArray
-      } {
+      }, {
         headers: { Authorization: `Bearer ${token}` }
       })
 
