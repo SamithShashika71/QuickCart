@@ -75,14 +75,17 @@ It provides a seamless online shopping experience with features like authenticat
 ### 1️⃣ Clone the Repository
 
 git clone https://github.com/your-username/quickcart.git
+
 cd quickcart
 
 2️⃣ Install Dependencies
+
     npm install
     # or
     yarn install
   
 3️⃣ Configure Environment Variables
+
 Create a .env file in the root directory:
     MONGODB_URI=your_mongodb_uri
     CLERK_SECRET_KEY=your_clerk_secret_key
@@ -91,22 +94,26 @@ Create a .env file in the root directory:
     INNGEST_API_KEY=your_inngest_key
   
 4️⃣ Run the Development Server
+
     npm run dev
-  Then open http://localhost:3000
+    Then open http://localhost:3000
 
 ---
 
 🚀 Deployment
+
 Easily deploy using Vercel:
   vercel
 
 ---
 
 🧑‍💻 Author
+
 Samith Shashika
 📧 [samithsashika71@gmail.com]
 
 ---
 
 📄 License
+
 This project is licensed under the MIT License – feel free to use and modify.
