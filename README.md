@@ -23,36 +23,36 @@ It provides a seamless online shopping experience with features like authenticat
 
 ## 📁 Project Structure
 
-QUICKCART/
-│
-├── app/ # Next.js App Router pages
-├── assets/ # Static assets (images, icons, etc.)
-├── components/ # Reusable React components
-│ ├── seller/ # Seller/admin-specific UI components
-│
-├── config/ # Database and Inngest configuration
-│ ├── db.js
-│ └── inngest.js
-│
-├── context/ # Global state management (AppContext)
-│ └── AppContext.jsx
-│
-├── lib/ # Utility functions
-│ └── authSeller.js
-│
-├── models/ # Mongoose models
-│ ├── Address.js
-│ ├── Order.js
-│ ├── Product.js
-│ └── User.js
-│
-├── public/ # Public assets
-│
-├── .env # Environment variables
-├── middleware.ts # Middleware (auth handling, etc.)
-├── package.json
-├── tailwind.config.mjs
-└── README.md
+      QUICKCART/
+      │
+      ├── app/ # Next.js App Router pages
+      ├── assets/ # Static assets (images, icons, etc.)
+      ├── components/ # Reusable React components
+      │ ├── seller/ # Seller/admin-specific UI components
+      │
+      ├── config/ # Database and Inngest configuration
+      │ ├── db.js
+      │ └── inngest.js
+      │
+      ├── context/ # Global state management (AppContext)
+      │ └── AppContext.jsx
+      │
+      ├── lib/ # Utility functions
+      │ └── authSeller.js
+      │
+      ├── models/ # Mongoose models
+      │ ├── Address.js
+      │ ├── Order.js
+      │ ├── Product.js
+      │ └── User.js
+      │
+      ├── public/ # Public assets
+      │
+      ├── .env # Environment variables
+      ├── middleware.ts # Middleware (auth handling, etc.)
+      ├── package.json
+      ├── tailwind.config.mjs
+      └── README.md
 
 ---
 
@@ -78,29 +78,35 @@ git clone https://github.com/your-username/quickcart.git
 cd quickcart
 
 2️⃣ Install Dependencies
-  npm install
-  # or
-  yarn install
+    npm install
+    # or
+    yarn install
   
 3️⃣ Configure Environment Variables
 Create a .env file in the root directory:
-  MONGODB_URI=your_mongodb_uri
-  CLERK_SECRET_KEY=your_clerk_secret_key
-  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_public_key
-  CLOUDINARY_URL=your_cloudinary_url
-  INNGEST_API_KEY=your_inngest_key
+    MONGODB_URI=your_mongodb_uri
+    CLERK_SECRET_KEY=your_clerk_secret_key
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_public_key
+    CLOUDINARY_URL=your_cloudinary_url
+    INNGEST_API_KEY=your_inngest_key
   
 4️⃣ Run the Development Server
-  npm run dev
+    npm run dev
   Then open http://localhost:3000
+
+---
 
 🚀 Deployment
 Easily deploy using Vercel:
   vercel
-  
+
+---
+
 🧑‍💻 Author
 Samith Shashika
 📧 [samithsashika71@gmail.com]
+
+---
 
 📄 License
 This project is licensed under the MIT License – feel free to use and modify.
