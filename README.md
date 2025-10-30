@@ -85,6 +85,7 @@ It provides a seamless online shopping experience with features like authenticat
       yarn install
   
 3️⃣ Configure Environment Variables
+
       Create a .env file in the root directory:
             MONGODB_URI=your_mongodb_uri
             CLERK_SECRET_KEY=your_clerk_secret_key
@@ -103,6 +104,17 @@ It provides a seamless online shopping experience with features like authenticat
 
       Easily deploy using Vercel:
         vercel
+
+---
+
+🧠 Key Learnings
+
+      * Building a full-stack web app with Next.js.
+      * Implementing authentication with Clerk.
+      * Managing async tasks using Inngest.
+      * Using MongoDB for dynamic data handling.
+      * Deploying full-stack apps efficiently on Vercel.
+      * Applying clean folder structure and reusable UI components.
 
 ---
 
