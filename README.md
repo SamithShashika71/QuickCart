@@ -74,7 +74,7 @@ It provides a seamless online shopping experience with features like authenticat
 
 ### 1️⃣ Clone the Repository
 
-      git clone https://github.com/your-username/quickcart.git
+      git clone https://github.com/samith-shashika/quickcart.git
 
       cd quickcart
 
